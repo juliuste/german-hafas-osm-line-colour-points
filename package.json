@@ -1,0 +1,47 @@
+{
+	"name": "german-hafas-osm-line-colour-points",
+	"description": "Points generated using hafas-osm-line-colours from data fetched using osm-transit-lines in Germany.",
+	"version": "0.0.0",
+	"keywords": [
+		"osm",
+		"transit",
+		"lines",
+		"hafas",
+		"colours",
+		"colors",
+		"line"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/german-hafas-osm-line-colour-points",
+	"repository": "juliuste/german-hafas-osm-line-colour-points",
+	"bugs": "https://github.com/juliuste/german-hafas-osm-line-colour-points/issues",
+	"main": "data.json",
+	"files": [
+		"data.json"
+	],
+	"dependencies": {
+		"hafas-osm-line-colours": "^0.1.0",
+		"osm-transit-lines": "^0.2.0"
+	},
+	"devDependencies": {
+		"depcheck": "^0.6.11",
+		"eslint": "^5.10.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-node": "^8.0.0",
+		"eslint-plugin-promise": "^4.0.1",
+		"eslint-plugin-standard": "^4.0.0"
+	},
+	"scripts": {
+		"build": "node build/index > data.json",
+		"check-deps": "depcheck",
+		"lint": "eslint build",
+		"fix": "eslint --fix build",
+		"test": "npm run lint && npm run check-deps",
+		"prepublishOnly": "npm run build && npm test"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"license": "ISC"
+}
