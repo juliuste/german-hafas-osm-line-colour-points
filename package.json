@@ -19,10 +19,7 @@
 	"files": [
 		"data.json"
 	],
-	"dependencies": {
-		"hafas-osm-line-colours": "^0.1.0",
-		"osm-transit-lines": "^0.2.0"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"depcheck": "^0.6.11",
 		"eslint": "^5.10.0",
@@ -30,7 +27,9 @@
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-node": "^8.0.0",
 		"eslint-plugin-promise": "^4.0.1",
-		"eslint-plugin-standard": "^4.0.0"
+		"eslint-plugin-standard": "^4.0.0",
+		"hafas-osm-line-colours": "^0.1.0",
+		"osm-transit-lines": "^0.2.0"
 	},
 	"scripts": {
 		"build": "node build/index > data.json",
