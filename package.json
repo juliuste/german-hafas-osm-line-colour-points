@@ -1,6 +1,6 @@
 {
 	"name": "german-hafas-osm-line-colour-points",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "Points generated using hafas-osm-line-colours from data fetched using osm-transit-lines in Germany.",
 	"keywords": [
 		"colors",
